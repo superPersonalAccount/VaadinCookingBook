@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="7.7.0">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout spacing responsive height="40%" margin> 
+   <vaadin-label style-name="align-center huge" width="566px" height="56px" plain-text _id="titleRegister" :center>
+     CookingBook: rejestracja 
+   </vaadin-label> 
+   <vaadin-vertical-split-panel width="430px" height="10px" _id="splitLineRegister" :middle :center></vaadin-vertical-split-panel> 
+   <vaadin-horizontal-layout spacing :middle :center> 
+    <vaadin-label style-name="huge" width="208px" height="50px" plain-text _id="emailLabelRegister">
+      Podaj e-mail: 
+    </vaadin-label> 
+    <vaadin-text-field input-prompt="Login" width="185px" height="35px" _id="emailFieldRegister"></vaadin-text-field> 
+   </vaadin-horizontal-layout> 
+   <vaadin-horizontal-layout spacing :middle :center> 
+    <vaadin-label style-name="huge" width="208px" height="50px" plain-text _id="loginLabelRegister">
+      Podaj login: 
+    </vaadin-label> 
+    <vaadin-text-field input-prompt="Login" width="185px" height="35px" _id="loginFieldRegister"></vaadin-text-field> 
+   </vaadin-horizontal-layout> 
+   <vaadin-horizontal-layout spacing :middle :center> 
+    <vaadin-label style-name="huge" width="208px" height="50px" plain-text _id="passwordLabelRegister">
+      Podaj hasło: 
+    </vaadin-label> 
+    <vaadin-password-field input-prompt="Password" width="185px" height="35px" _id="passwordFieldRegister"></vaadin-password-field> 
+   </vaadin-horizontal-layout> 
+   <vaadin-horizontal-layout spacing :middle :center> 
+    <vaadin-label style-name="huge" width="208px" height="50px" plain-text _id="repeatPasswordLabelRegister">
+      Powtórz hasło: 
+    </vaadin-label> 
+    <vaadin-password-field input-prompt="Password" width="185px" height="35px" _id="repeatPasswordFieldRegister"></vaadin-password-field> 
+   </vaadin-horizontal-layout> 
+   <vaadin-button plain-text _id="registerButtonInRegister" :middle :center>
+     Rejestruj(wróć do głównej) 
+   </vaadin-button> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>
