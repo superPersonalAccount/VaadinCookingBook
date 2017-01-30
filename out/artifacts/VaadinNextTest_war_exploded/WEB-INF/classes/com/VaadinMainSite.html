@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="7.7.0">
+ </head> 
+ <body> 
+  <vaadin-grid-layout spacing width-full height="60%" margin> 
+   <row> 
+    <column></column> 
+    <column> 
+     <vaadin-vertical-layout spacing size-auto margin-left margin-right _id="loginVerticalLayout" :middle :center> 
+      <vaadin-button responsive width="114px" plain-text _id="loginButton" :middle :center>
+        Logowanie 
+      </vaadin-button> 
+      <vaadin-button responsive width="114px" plain-text _id="registerButton" :middle :center>
+        Rejestracja 
+      </vaadin-button> 
+     </vaadin-vertical-layout> 
+    </column> 
+    <column> 
+     <vaadin-label style-name="huge" size-auto plain-text _id="mainLabelTitle" :middle :center>
+       CookingBook 
+     </vaadin-label> 
+    </column> 
+   </row> 
+   <row> 
+    <column> 
+     <vaadin-tree :middle :center> 
+      <node text="Najnowsze przepisy"> 
+       <node text="Ćwikła z chrzanem"></node> 
+       <node text="Chleb z masłem"></node> 
+       <node text="Słone paluszki"></node> 
+      </node> 
+      <node text="O Autorach"> 
+       <node text="test1"></node> 
+       <node text="test2"></node> 
+      </node> 
+      <node text="Kontakt"> 
+       <node text="e-mail"></node> 
+       <node text="facebook"></node> 
+      </node> 
+     </vaadin-tree> 
+    </column> 
+    <column> 
+     <vaadin-vertical-layout spacing size-auto _id="searchingVerticalLayout" :middle :center> 
+      <vaadin-label size-auto plain-text>
+        Wyszukaj przepis: 
+      </vaadin-label> 
+      <vaadin-text-field _id="searcherField"></vaadin-text-field> 
+     </vaadin-vertical-layout> 
+    </column> 
+    <column> 
+     <vaadin-vertical-layout spacing size-auto _id="addImageVerticalLayout" :middle :center> 
+      <vaadin-label size-auto plain-text _id="labelAddImage">
+        Dodaj zdjęcie z dysku: 
+      </vaadin-label> 
+      <vaadin-upload :middle :center></vaadin-upload> 
+      <vaadin-text-area width="326px" :middle :center></vaadin-text-area> 
+     </vaadin-vertical-layout> 
+    </column> 
+   </row> 
+   <row></row> 
+  </vaadin-grid-layout>  
+ </body>
+</html>

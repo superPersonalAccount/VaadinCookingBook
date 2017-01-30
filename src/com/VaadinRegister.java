@@ -37,4 +37,22 @@ public class VaadinRegister extends VerticalLayout {
     public VaadinRegister() {
         Design.read(this);
     }
+
+
+
+    public TextField getLoginFieldRegister() {
+        return loginFieldRegister;
+    }
+
+    public TextField getEmailFieldRegister() {
+        return emailFieldRegister;
+    }
+
+    public PasswordField getPasswordFieldRegister() {
+        return passwordFieldRegister;
+    }
+
+    public PasswordField getRepeatPasswordFieldRegister() {
+        return repeatPasswordFieldRegister;
+    }
 }
