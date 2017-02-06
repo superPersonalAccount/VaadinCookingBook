@@ -14,7 +14,7 @@ public class DbConnection {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://sql7.freemysqlhosting.net:3306/cookingbook", "root", "");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cookingbook", "root", "");
             System.out.println("Połączono");
             return conn;
         } catch (ClassNotFoundException e) {
